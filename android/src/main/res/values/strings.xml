@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_of_crash">很抱歉,程序出现奔溃异常,即将退出.</string>
+</resources>

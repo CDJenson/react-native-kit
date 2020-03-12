@@ -1,0 +1,32 @@
+{
+  "name": "rnkit_example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "dev:all": "npm run dev:ios && npm run dev:android",
+    "dev:ios": "react-native run-ios",
+    "dev:android": "react-native run-android",
+    "bundle:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res/ ",
+    "patch:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output ./bundle/index.android.bundle --assets-dest ./bundle/ ",
+    "bundle:ios": "react-native bundle --entry-file index.js --bundle-output ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false",
+    "package:android": "cd android && gradlew assembleRelease"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.9",
+    "react-native-kit": "git@github.com:CDJenson/react-native-kit.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

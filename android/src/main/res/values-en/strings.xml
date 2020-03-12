@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="toast_of_crash"> sorry about this crash,we will fix it as soon as possible and the app will exit soon.</string>
+</resources>
